@@ -4,7 +4,6 @@ const Home = () => {
   const now = new Date();
 
   const time = now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true });
-  
   const date = (new Intl.DateTimeFormat('en-IN', { dateStyle: 'full', timeZone: 'Asia/Kolkata' })).format(now);
   return (
     <section className="flex size-full flex-col gap-5 text-white">
